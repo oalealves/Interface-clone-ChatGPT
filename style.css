@@ -3,6 +3,10 @@
  	font-family: "Roboto", sans-serif;
  }
 
+ button {
+ 	all: unset;
+ }
+
  h3 {
  	color: white;
  	font-size: 14px;
@@ -12,6 +16,7 @@
  ul {
  	list-style: none;
  	padding: 0;
+	margin: 0;
  }
 
  .icon {
@@ -22,14 +27,15 @@
  	background-color: #222222;
  	min-height: 100vh;
  	min-width: 100vw;
-	display: flex;
+ 	display: flex;
  }
 
  .sidebar {
- 	height: 100vh;
+ 	display: flex;
  	width: 260px;
  	background-color: #171717;
  	padding: 0 12px 12px 12px;
+ 	flex-direction: column;
  }
 
  .logo {
@@ -71,7 +77,10 @@
  	flex: 1;
  }
 
- .chats-container {}
+ .chats-container {
+ 	flex: 1;
+ }
+
 
  .chat-group {
  	margin-top: 20px;
@@ -86,11 +95,14 @@
  	font-size: 12px;
  }
 
+
+
  .chat {
  	display: flex;
  	align-items: center;
  	padding: 8px;
  	justify-content: space-between;
+	cursor: pointer;
  }
 
  .chat:hover {
@@ -125,3 +137,42 @@
  .chat:hover .chat-icons {
  	visibility: visible;
  }
+
+ .bottom-button-container {
+ 	display: flex;
+ }
+
+
+ .account-button {
+ 	font-size: 14;
+ 	color: #ececec;
+ 	display: flex;
+ 	align-items: center;
+ 	gap: 8px;
+ 	padding: 8px;
+ 	flex: 1;
+	cursor: pointer;
+ }
+
+ .account-button:hover {
+	background-color: #212121;
+	border-radius: 8px;
+ }
+ .account-button img {
+ 	width: 32px;
+ 	height: 32px;
+ 	border-radius: 100%;
+ }
+
+ .content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	
+ }
+ 
+ .main-content {
+	flex: 1;
+ }
+
+ 
