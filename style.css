@@ -11,12 +11,17 @@
  	color: white;
  	font-size: 14px;
  	font-weight: 500;
+ 	margin: 0;
  }
 
  ul {
  	list-style: none;
  	padding: 0;
-	margin: 0;
+ 	margin: 0;
+ }
+
+ p {
+ 	margin: 0;
  }
 
  .icon {
@@ -32,7 +37,7 @@
 
  .sidebar {
  	display: flex;
- 	width: 260px;
+
  	background-color: #171717;
  	padding: 0 12px 12px 12px;
  	flex-direction: column;
@@ -51,6 +56,7 @@
 
  .new-chat-container {
  	padding-top: 14px;
+ 	width: 236px;
  }
 
  .new-chat-container>div {
@@ -79,6 +85,7 @@
 
  .chats-container {
  	flex: 1;
+ 	width: 236px;
  }
 
 
@@ -102,7 +109,7 @@
  	align-items: center;
  	padding: 8px;
  	justify-content: space-between;
-	cursor: pointer;
+ 	cursor: pointer;
  }
 
  .chat:hover {
@@ -140,6 +147,7 @@
 
  .bottom-button-container {
  	display: flex;
+ 	width: 236px;
  }
 
 
@@ -151,13 +159,14 @@
  	gap: 8px;
  	padding: 8px;
  	flex: 1;
-	cursor: pointer;
+ 	cursor: pointer;
  }
 
  .account-button:hover {
-	background-color: #212121;
-	border-radius: 8px;
+ 	background-color: #212121;
+ 	border-radius: 8px;
  }
+
  .account-button img {
  	width: 32px;
  	height: 32px;
@@ -165,14 +174,177 @@
  }
 
  .content {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	
- }
- 
- .main-content {
-	flex: 1;
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex: 1;
+
  }
 
+ .main-content {
+ 	flex: 1;
+ }
+
+ .input-chat-container {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	flex-direction: column;
+ 	padding: 0 8px;
+
+ }
+
+ .input-chat-container p {
+ 	color: #B4B4B4;
+ 	font-size: 12px;
+ 	padding: 8px 60px;
+ }
+
+ .input-chat-container form {
+ 	width: 100%;
+ 	display: flex;
+
+ 	align-items: center;
+ 	justify-content: center;
+
+ }
+
+
+ .input-chat {
+
+
+ 	border: 1px solid rgba(255, 255, 255, 0.15);
+ 	border-radius: 14px;
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 14px 16px;
+ 	gap: 8px;
+ 	max-width: 500px;
+
+ 	flex: 1;
+
+
+ }
+
+ .input-chat input {
+ 	height: 24px;
+ 	background-color: transparent;
+ 	border: none;
+ 	color: white;
+ 	max-width: 500px;
+ 	flex: 1;
+ 	font-size: 16px;
+
+
+ }
+
+ .input-chat input:focus {
+ 	outline: none;
+
+ }
+
+ .send-button {
+ 	background-color: white;
+ 	opacity: 10%;
+ 	border-radius: 8px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	padding: 3px;
+ }
+
+ .main-content {
+ 	display: flex;
+ 	position: relative;
+
+ 	align-items: center;
+ 	justify-content: center;
+ }
+
+ .main-content .logo {
+ 	height: 48px;
+ 	width: 48px;
+ }
+
+ .main-content .logo svg {
+ 	height: 32px;
+ 	width: 32px;
+ }
+
+ .main-content h1 {
+ 	font-size: 24px;
+ 	color: white;
+ }
+
+ .title-home-page {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	flex-direction: column;
+ }
+
+ .chatgpt-button {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	gap: 4px;
+ 	position: absolute;
+ 	top: 6px;
+ 	left: 6px;
+ 	cursor: pointer;
+ 	border-radius: 10px;
+ 	padding: 8px 12px;
+
+ }
+
+ .chatgpt-button>div {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	gap: 2px;
+
+
+
+ }
+
+ .chatgpt-button h3 {
+ 	font-size: 18px;
+ 	color: white;
+ 	font-weight: 500;
+
+ }
+
+ .chatgpt-button span {
+ 	color: #b4b4b4;
+ 	font-size: 18px;
+ 	font-weight: 500;
+
+
+ }
+
+ .chatgpt-button svg {
+ 	color: #b4b4b4;
+ }
+
+ .chatgpt-button:hover {
+ 	background-color: #2f2f2f;
+
+ }
+
+ .box-question {
+ 	border: 1px solid rgba(255, 255, 255, 0.15);
+ 	border-radius: 14px;
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 12px 16px;
+ 	box-sizing: border-box;
+ 	height: 66px;
+ 	width: 372px;
+	flex-direction: column;
+
+ }
+
+ .box-question span.test {
+ 	font-size: 14px;
+ 	color: white;
+ }
  
