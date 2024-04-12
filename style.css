@@ -180,9 +180,6 @@
 
  }
 
- .main-content {
- 	flex: 1;
- }
 
  .input-chat-container {
  	display: flex;
@@ -218,7 +215,8 @@
  	align-items: center;
  	padding: 14px 16px;
  	gap: 8px;
- 	max-width: 500px;
+ 	max-width: 730px;
+
 
  	flex: 1;
 
@@ -230,7 +228,7 @@
  	background-color: transparent;
  	border: none;
  	color: white;
- 	max-width: 500px;
+
  	flex: 1;
  	font-size: 16px;
 
@@ -255,6 +253,7 @@
  .main-content {
  	display: flex;
  	position: relative;
+ 	flex: 1;
 
  	align-items: center;
  	justify-content: center;
@@ -330,21 +329,86 @@
 
  }
 
+ .box-questions-container {
+ 	display: flex;
+ 	position: absolute;
+ 	bottom: 16px;
+
+
+ }
+
+
+
  .box-question {
  	border: 1px solid rgba(255, 255, 255, 0.15);
  	border-radius: 14px;
  	display: flex;
- 	align-items: center;
+ 	justify-content: center;
  	padding: 12px 16px;
  	box-sizing: border-box;
  	height: 66px;
  	width: 372px;
-	flex-direction: column;
+ 	flex-direction: column;
+ 	position: relative;
 
  }
 
- .box-question span.test {
+
+
+ .box-question:hover {
+ 	background-color: #2f2f2f;
+ 	cursor: pointer;
+
+ }
+
+ .box-question span.text {
  	font-size: 14px;
  	color: white;
+
+
  }
- 
+
+ .box-question span.text2 {
+ 	font-size: 14px;
+ 	color: white;
+ 	opacity: .5;
+
+
+
+ }
+
+ .box-question:hover .arrow-icon {
+ 	visibility: visible;
+
+ }
+
+ .grid-container {
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+ 	grid-gap: 8px;
+
+
+ }
+
+ .arrow-icon {
+ 	position: absolute;
+ 	right: 16px;
+ 	background-color: #212121;
+ 	padding: 4px;
+ 	border-radius: 8px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	visibility: hidden;
+
+ }
+
+ .arrow-icon svg {
+ 	color: #fff;
+ 	width: 16px;
+ 	height: 16px;
+
+
+
+
+ }
